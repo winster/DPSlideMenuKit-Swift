@@ -55,13 +55,116 @@
             </objects>
             <point key="canvasLocation" x="-2" y="555"/>
         </scene>
-        <!--DPHomeViewController-->
-        <scene sceneID="OTG-6x-SAI">
+        <!--Left Menu View Controller-->
+        <scene sceneID="Iut-uj-izF">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DPHomeViewController" storyboardName="Pages" referencedIdentifier="DPHomeViewController" id="6np-fP-AQp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cQj-eJ-cjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="leftmenu" id="RsQ-U9-SSV" customClass="DPLeftMenuViewController" customModule="DPSlideMenuKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mu1-3x-3YO"/>
+                        <viewControllerLayoutGuide type="bottom" id="826-vD-Amu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nVq-39-vdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nI6-re-mfR">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-fT-cTh">
+                                        <frame key="frameInset" minY="298.5" width="260" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EVl-Ga-Vr7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button1"/>
+                                        <connections>
+                                            <action selector="button1Action:" destination="RsQ-U9-SSV" eventType="touchUpInside" id="I3J-DI-wR0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkW-Ki-qRP">
+                                        <frame key="frameInset" minY="358.5" width="260" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7jT-79-3l2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button2"/>
+                                        <connections>
+                                            <action selector="button2Action:" destination="RsQ-U9-SSV" eventType="touchUpInside" id="BsV-WU-lon"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-5Q-myz">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ef8-5v-aO5"/>
+                                        </constraints>
+                                        <state key="normal" title="Close Menu">
+                                            <color key="titleColor" red="0.047485574060000001" green="0.49221575249999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonAction:" destination="RsQ-U9-SSV" eventType="touchUpInside" id="Nu3-fv-SZE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fkW-Ki-qRP" firstAttribute="leading" secondItem="nI6-re-mfR" secondAttribute="leading" id="6wo-ng-AJi"/>
+                                    <constraint firstAttribute="bottom" secondItem="PEb-5Q-myz" secondAttribute="bottom" constant="10" id="7Nd-gt-Jn8"/>
+                                    <constraint firstItem="vJP-fT-cTh" firstAttribute="centerY" secondItem="nI6-re-mfR" secondAttribute="centerY" id="JFD-75-Eol"/>
+                                    <constraint firstAttribute="width" constant="260" id="Pci-Bj-gqB"/>
+                                    <constraint firstAttribute="trailing" secondItem="fkW-Ki-qRP" secondAttribute="trailing" id="UEj-C2-LsR"/>
+                                    <constraint firstAttribute="trailing" secondItem="vJP-fT-cTh" secondAttribute="trailing" id="XaO-wf-jSa"/>
+                                    <constraint firstItem="PEb-5Q-myz" firstAttribute="leading" secondItem="nI6-re-mfR" secondAttribute="leading" id="fHv-H9-jzf"/>
+                                    <constraint firstAttribute="trailing" secondItem="PEb-5Q-myz" secondAttribute="trailing" id="haE-JB-wTP"/>
+                                    <constraint firstItem="vJP-fT-cTh" firstAttribute="leading" secondItem="nI6-re-mfR" secondAttribute="leading" id="hxO-I8-74k"/>
+                                    <constraint firstItem="fkW-Ki-qRP" firstAttribute="top" secondItem="vJP-fT-cTh" secondAttribute="bottom" constant="10" id="zeI-xc-EEP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52809277200000004" green="0.7642166843" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nI6-re-mfR" firstAttribute="top" secondItem="nVq-39-vdQ" secondAttribute="top" id="Uuz-VE-fZv"/>
+                            <constraint firstItem="826-vD-Amu" firstAttribute="top" secondItem="nI6-re-mfR" secondAttribute="bottom" id="o81-eC-wTD"/>
+                            <constraint firstItem="nI6-re-mfR" firstAttribute="leading" secondItem="nVq-39-vdQ" secondAttribute="leading" id="oxb-BW-dVu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3s3-aK-cIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="-253"/>
+            <point key="canvasLocation" x="688.79999999999995" y="554.57271364317842"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Il0-0y-uww">
+            <objects>
+                <viewController storyboardIdentifier="DPHomeViewController" id="oMQ-L7-OdU" customClass="DPHomeViewController" customModule="DPSlideMenuKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6UJ-PN-1CS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cet-e9-vL6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k0e-JG-Dbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.81241358335701741" blue="0.11355914653495647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pi-1T-mpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-237"/>
+        </scene>
+        <!--Support View Controller-->
+        <scene sceneID="skz-Wv-N3b">
+            <objects>
+                <viewController storyboardIdentifier="DPSupportViewController" id="zu2-jV-B9C" customClass="DPSupportViewController" customModule="DPSlideMenuKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zGl-hn-S8Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bM-9u-kaW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8As-tW-EDE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92269658684793621" green="0.43310632157223261" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FH2-dh-u2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514" y="-237"/>
         </scene>
     </scenes>
 </document>
