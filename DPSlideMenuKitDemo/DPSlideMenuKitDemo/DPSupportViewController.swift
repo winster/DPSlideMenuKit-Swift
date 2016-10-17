@@ -10,7 +10,7 @@ import UIKit
 
 class DPSupportViewController: DPContentViewController {
   
-  override init(nibName nibNameOrNil: String?,
+  /*override init(nibName nibNameOrNil: String?,
                         bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil,
                bundle: nibBundleOrNil)
@@ -18,7 +18,7 @@ class DPSupportViewController: DPContentViewController {
   
   required internal init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-  }
+  }*/
 
   override func viewDidLoad() {
     super.viewDidLoad()
